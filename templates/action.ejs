@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Buy or Sell</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<div id = "container">
+      <h1>Build Your Portfolio</h1>
+	  <p>Buy or sell stocks here:</p>
+	  <form action = "/processAction" method = "post">
+		<fieldset>
+			Your Name: <input name = "name"><br><br>
+			Your Email: <input type = "email" name = "email"><br><br>
+			Stock Ticker: <input name = "ticker"><br><br>
+			Shares: <input type = "number" name = "shares" min = 1 max = 10><br><br>
+			Buy or Sell:
+			<select name = "choice">
+			  <option value = "Buy">Buy</option>
+			  <option value = "Sell">Sell</option>
+			</select><br><br>
+            <input type = "submit"><input type = "reset">
+		</fieldset>
+	  </form>
+	</div>
+</body>
